@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjx1ld87qjhbs"]
+
+[ext_resource type="Script" path="res://Scripts/hud.gd" id="1_temxm"]
+[ext_resource type="FontFile" uid="uid://bhkphgm266vvu" path="res://assets/fonts/Kenney Pixel Square.ttf" id="2_q0hkr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_o8uvk"]
+font = ExtResource("2_q0hkr")
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_temxm")
+
+[node name="TimeLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -52.0
+offset_right = 52.0
+offset_bottom = 24.0
+grow_horizontal = 2
+text = "TIME: 9999"
+label_settings = SubResource("LabelSettings_o8uvk")

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5erlhng1526n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bt1ix"]
+size = Vector2(860, 22)
+
+[node name="deathzone" type="Area2D"]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(162, 272)
+shape = SubResource("RectangleShape2D_bt1ix")
